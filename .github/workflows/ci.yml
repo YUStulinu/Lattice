@@ -49,9 +49,12 @@ jobs:
               open(path, "w").write(f"p cnf {(n + 1) * n} {len(cl)}\n" + "".join(" ".join(map(str, c)) + " 0\n" for c in cl))
           php(7, "php7.cnf"); php(7, "php7_sat.cnf", drop=True)
           PY
-          ./build/lattice --quiet --proof php7.drat php7.cnf | grep "s UNSATISFIABLE"
+          # The solver exits with 20 on UNSAT (the SAT-competition convention), so check that code.
+          code=0; ./build/lattice --quiet --proof php7.drat php7.cnf > out.txt || code=$?
+          test "$code" -eq 20 && grep "s UNSATISFIABLE" out.txt
           ./checker/target/release/lattice-check php7.cnf php7.drat | grep "s VERIFIED"
-          ./build/lattice --quiet --text-proof --proof php7.txt php7.cnf > /dev/null
+          code=0; ./build/lattice --quiet --text-proof --proof php7.txt php7.cnf > /dev/null || code=$?
+          test "$code" -eq 20
           ./checker/target/release/lattice-check php7.cnf php7.txt | grep "s VERIFIED"
           ! ./checker/target/release/lattice-check php7_sat.cnf php7.drat
 
