@@ -1,0 +1,8 @@
+{
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "rust-analyzer.linkedProjects": ["checker/Cargo.toml"],
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.testing.pytestEnabled": true,
+  "python.testing.cwd": "${workspaceFolder}/bench",
+  "python.testing.pytestArgs": ["tests"]
+}

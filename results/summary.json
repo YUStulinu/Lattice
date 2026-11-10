@@ -1,0 +1,373 @@
+{
+ "competition": {
+  "minisat22": {
+   "runs": 100,
+   "solved": 17,
+   "sat": 10,
+   "unsat": 7,
+   "par2": 506.7,
+   "wrong": 0,
+   "bad_models": 0,
+   "errors": 10
+  },
+  "cadical195": {
+   "runs": 100,
+   "solved": 39,
+   "sat": 19,
+   "unsat": 20,
+   "par2": 415.5,
+   "wrong": 0,
+   "bad_models": 0,
+   "errors": 0
+  },
+  "lattice": {
+   "runs": 100,
+   "solved": 24,
+   "sat": 11,
+   "unsat": 13,
+   "par2": 467.2,
+   "wrong": 0,
+   "bad_models": 0,
+   "errors": 0,
+   "proofs": {
+    "checked": 13,
+    "verified": 13,
+    "rejected": 0,
+    "check_timed_out": 0,
+    "check_over_solve_median": 3.14,
+    "check_seconds_max": 1494.08,
+    "proof_mb_median": 33.6,
+    "proof_mb_max": 283.8
+   }
+  }
+ },
+ "families": {
+  "interval-matching": {
+   "instances": 9,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "register-allocation": {
+   "instances": 9,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "miter": {
+   "instances": 8,
+   "lattice": 4,
+   "minisat22": 2,
+   "cadical195": 5
+  },
+  "social-golfer": {
+   "instances": 8,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "argumentation": {
+   "instances": 8,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 3
+  },
+  "mutilated-chessboard": {
+   "instances": 6,
+   "lattice": 3,
+   "minisat22": 0,
+   "cadical195": 3
+  },
+  "cryptography-simon": {
+   "instances": 5,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "cryptography-ascon": {
+   "instances": 4,
+   "lattice": 1,
+   "minisat22": 1,
+   "cadical195": 4
+  },
+  "set-covering": {
+   "instances": 4,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 3
+  },
+  "planning": {
+   "instances": 4,
+   "lattice": 4,
+   "minisat22": 3,
+   "cadical195": 4
+  },
+  "pigeon-hole": {
+   "instances": 4,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "cryptography": {
+   "instances": 3,
+   "lattice": 2,
+   "minisat22": 2,
+   "cadical195": 2
+  },
+  "tseitin-formulas": {
+   "instances": 3,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "brent-equations": {
+   "instances": 2,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 1
+  },
+  "subgraph-isomorphism": {
+   "instances": 2,
+   "lattice": 1,
+   "minisat22": 1,
+   "cadical195": 2
+  },
+  "quasigroup-completion": {
+   "instances": 2,
+   "lattice": 1,
+   "minisat22": 1,
+   "cadical195": 2
+  },
+  "coloring": {
+   "instances": 2,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "relativized-pigeon-hole": {
+   "instances": 2,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "or_randxor": {
+   "instances": 2,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "coloring-clique": {
+   "instances": 2,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "matrix-multiplication": {
+   "instances": 1,
+   "lattice": 1,
+   "minisat22": 1,
+   "cadical195": 1
+  },
+  "hardware-verification": {
+   "instances": 1,
+   "lattice": 1,
+   "minisat22": 1,
+   "cadical195": 1
+  },
+  "grs-fp-comm": {
+   "instances": 1,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 1
+  },
+  "influence-maximization": {
+   "instances": 1,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 1
+  },
+  "fpga-routing": {
+   "instances": 1,
+   "lattice": 1,
+   "minisat22": 1,
+   "cadical195": 1
+  },
+  "parity-games": {
+   "instances": 1,
+   "lattice": 1,
+   "minisat22": 1,
+   "cadical195": 1
+  },
+  "rbsat": {
+   "instances": 1,
+   "lattice": 1,
+   "minisat22": 0,
+   "cadical195": 1
+  },
+  "minimal-disagreement-parity": {
+   "instances": 1,
+   "lattice": 0,
+   "minisat22": 0,
+   "cadical195": 0
+  },
+  "prime-factoring": {
+   "instances": 1,
+   "lattice": 1,
+   "minisat22": 1,
+   "cadical195": 1
+  },
+  "sgen": {
+   "instances": 1,
+   "lattice": 1,
+   "minisat22": 1,
+   "cadical195": 1
+  },
+  "product-configuration": {
+   "instances": 1,
+   "lattice": 1,
+   "minisat22": 1,
+   "cadical195": 1
+  }
+ },
+ "satlib": {
+  "minisat22": {
+   "runs": 200,
+   "solved": 200,
+   "sat": 100,
+   "unsat": 100,
+   "par2": 1.8,
+   "wrong": 0,
+   "bad_models": 0,
+   "errors": 0
+  },
+  "lattice": {
+   "runs": 200,
+   "solved": 200,
+   "sat": 100,
+   "unsat": 100,
+   "par2": 2.2,
+   "wrong": 0,
+   "bad_models": 0,
+   "errors": 0,
+   "proofs": {
+    "checked": 100,
+    "verified": 100,
+    "rejected": 0,
+    "check_timed_out": 0,
+    "check_over_solve_median": 1.97,
+    "check_seconds_max": 24.11,
+    "proof_mb_median": 4.95,
+    "proof_mb_max": 11.7
+   }
+  },
+  "cadical195": {
+   "runs": 200,
+   "solved": 200,
+   "sat": 100,
+   "unsat": 100,
+   "par2": 3.7,
+   "wrong": 0,
+   "bad_models": 0,
+   "errors": 0
+  }
+ },
+ "ablation_satlib": {
+  "lattice-glucose": {
+   "runs": 200,
+   "solved": 200,
+   "sat": 100,
+   "unsat": 100,
+   "par2": 2.1,
+   "wrong": 0,
+   "bad_models": 0,
+   "errors": 0,
+   "proofs": {
+    "checked": 100,
+    "verified": 100,
+    "rejected": 0,
+    "check_timed_out": 0,
+    "check_over_solve_median": 2.23,
+    "check_seconds_max": 25.2,
+    "proof_mb_median": 4.85,
+    "proof_mb_max": 10.0
+   }
+  },
+  "lattice-noelim": {
+   "runs": 200,
+   "solved": 200,
+   "sat": 100,
+   "unsat": 100,
+   "par2": 2.1,
+   "wrong": 0,
+   "bad_models": 0,
+   "errors": 0,
+   "proofs": {
+    "checked": 100,
+    "verified": 100,
+    "rejected": 0,
+    "check_timed_out": 0,
+    "check_over_solve_median": 2.22,
+    "check_seconds_max": 36.0,
+    "proof_mb_median": 4.85,
+    "proof_mb_max": 12.5
+   }
+  },
+  "lattice-luby": {
+   "runs": 200,
+   "solved": 200,
+   "sat": 100,
+   "unsat": 100,
+   "par2": 2.0,
+   "wrong": 0,
+   "bad_models": 0,
+   "errors": 0,
+   "proofs": {
+    "checked": 100,
+    "verified": 100,
+    "rejected": 0,
+    "check_timed_out": 0,
+    "check_over_solve_median": 2.21,
+    "check_seconds_max": 37.58,
+    "proof_mb_median": 4.6,
+    "proof_mb_max": 13.0
+   }
+  },
+  "lattice": {
+   "runs": 200,
+   "solved": 200,
+   "sat": 100,
+   "unsat": 100,
+   "par2": 2.2,
+   "wrong": 0,
+   "bad_models": 0,
+   "errors": 0,
+   "proofs": {
+    "checked": 100,
+    "verified": 100,
+    "rejected": 0,
+    "check_timed_out": 0,
+    "check_over_solve_median": 1.97,
+    "check_seconds_max": 24.11,
+    "proof_mb_median": 4.95,
+    "proof_mb_max": 11.7
+   }
+  }
+ },
+ "unique": {
+  "lattice": 0,
+  "minisat22": 0,
+  "cadical195": 14
+ },
+ "lattice_vs": {
+  "minisat22": {
+   "both": 16,
+   "lattice_only": 8,
+   "other_only": 1
+  },
+  "cadical195": {
+   "both": 24,
+   "lattice_only": 0,
+   "other_only": 15
+  }
+ }
+}

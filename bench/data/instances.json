@@ -1,0 +1,707 @@
+{
+ "source": "https://benchmark-database.de, query 'track=main_2023 and clauses<300000'",
+ "seed": 2023,
+ "matching": 247,
+ "instances": [
+  {
+   "hash": "00f2eb377986e7decbc863931680a3b2",
+   "family": "miter",
+   "result": "unsat",
+   "filename": "00f2eb377986e7decbc863931680a3b2",
+   "bytes": 90800
+  },
+  {
+   "hash": "00f4aca773e5675f35263dcd46b15bde",
+   "family": "cryptography",
+   "result": "sat",
+   "filename": "00f4aca773e5675f35263dcd46b15bde",
+   "bytes": 487588
+  },
+  {
+   "hash": "0191a0bf3412ed407ba669f8d69081ee",
+   "family": "planning",
+   "result": "sat",
+   "filename": "0191a0bf3412ed407ba669f8d69081ee",
+   "bytes": 150068
+  },
+  {
+   "hash": "02066c116dbacc40ec5cca2067db26c0",
+   "family": "planning",
+   "result": "unsat",
+   "filename": "02066c116dbacc40ec5cca2067db26c0",
+   "bytes": 36384
+  },
+  {
+   "hash": "037d21e060a2e3eab8b080aa84ceee75",
+   "family": "matrix-multiplication",
+   "result": "sat",
+   "filename": "037d21e060a2e3eab8b080aa84ceee75",
+   "bytes": 696100
+  },
+  {
+   "hash": "03de316ba1e90305471a3b8620cb9cd7",
+   "family": "subgraph-isomorphism",
+   "result": "sat",
+   "filename": "03de316ba1e90305471a3b8620cb9cd7",
+   "bytes": 9212
+  },
+  {
+   "hash": "03e9d1abe418a1727bbf2ead77d69d02",
+   "family": "pigeon-hole",
+   "result": "unknown",
+   "filename": "03e9d1abe418a1727bbf2ead77d69d02",
+   "bytes": 7592
+  },
+  {
+   "hash": "075ca0a158690a55b7254d9aaee2e103",
+   "family": "cryptography-ascon",
+   "result": "unsat",
+   "filename": "075ca0a158690a55b7254d9aaee2e103",
+   "bytes": 508432
+  },
+  {
+   "hash": "0811f761eee5e4ef28196fd98884a67b",
+   "family": "miter",
+   "result": "unsat",
+   "filename": "0811f761eee5e4ef28196fd98884a67b",
+   "bytes": 27736
+  },
+  {
+   "hash": "0ae0c5a4fb9001d63669a0aa5b592167",
+   "family": "miter",
+   "result": "unsat",
+   "filename": "0ae0c5a4fb9001d63669a0aa5b592167",
+   "bytes": 42536
+  },
+  {
+   "hash": "112b0ac22b2a567cd3badfed3a5497fd",
+   "family": "mutilated-chessboard",
+   "result": "unsat",
+   "filename": "112b0ac22b2a567cd3badfed3a5497fd",
+   "bytes": 3400
+  },
+  {
+   "hash": "11db226d109e82f93aaa3b2604173ff9",
+   "family": "register-allocation",
+   "result": "unsat",
+   "filename": "11db226d109e82f93aaa3b2604173ff9",
+   "bytes": 6224
+  },
+  {
+   "hash": "18416a9ac0909dce5fa96345f784c87e",
+   "family": "interval-matching",
+   "result": "unsat",
+   "filename": "18416a9ac0909dce5fa96345f784c87e",
+   "bytes": 109572
+  },
+  {
+   "hash": "189e5991b041a89700513106988e720d",
+   "family": "relativized-pigeon-hole",
+   "result": "unsat",
+   "filename": "189e5991b041a89700513106988e720d",
+   "bytes": 8180
+  },
+  {
+   "hash": "19004c7d629f7e6e83c6e1d7a9a768a9",
+   "family": "miter",
+   "result": "unsat",
+   "filename": "19004c7d629f7e6e83c6e1d7a9a768a9",
+   "bytes": 41036
+  },
+  {
+   "hash": "1a20649a8c79d6675d934cec271d573f",
+   "family": "tseitin-formulas",
+   "result": "unsat",
+   "filename": "1a20649a8c79d6675d934cec271d573f",
+   "bytes": 147344
+  },
+  {
+   "hash": "1a40d2d8c589799a0d267cae03fcd4c5",
+   "family": "set-covering",
+   "result": "sat",
+   "filename": "1a40d2d8c589799a0d267cae03fcd4c5",
+   "bytes": 148360
+  },
+  {
+   "hash": "1aa7cd96ab1f7bf58984deccf8362ab4",
+   "family": "miter",
+   "result": "unsat",
+   "filename": "1aa7cd96ab1f7bf58984deccf8362ab4",
+   "bytes": 97876
+  },
+  {
+   "hash": "1eea3d913d346b900252d77fc0cb25c8",
+   "family": "minimal-disagreement-parity",
+   "result": "sat",
+   "filename": "1eea3d913d346b900252d77fc0cb25c8",
+   "bytes": 57788
+  },
+  {
+   "hash": "1f215812371f0c428eb1f1e51f9f23d7",
+   "family": "cryptography-simon",
+   "result": "sat",
+   "filename": "1f215812371f0c428eb1f1e51f9f23d7",
+   "bytes": 19340
+  },
+  {
+   "hash": "21bde0ebb111c637a1ae8789827b0b73",
+   "family": "register-allocation",
+   "result": "unsat",
+   "filename": "21bde0ebb111c637a1ae8789827b0b73",
+   "bytes": 14164
+  },
+  {
+   "hash": "220bb8aa093e502c47afcdac3140d67c",
+   "family": "cryptography",
+   "result": "sat",
+   "filename": "220bb8aa093e502c47afcdac3140d67c",
+   "bytes": 86528
+  },
+  {
+   "hash": "24bf910d2b9da558fb3e71a4dbe79ba3",
+   "family": "prime-factoring",
+   "result": "sat",
+   "filename": "24bf910d2b9da558fb3e71a4dbe79ba3",
+   "bytes": 39744
+  },
+  {
+   "hash": "26114429758a203d651f4df87c94de4c",
+   "family": "sgen",
+   "result": "unsat",
+   "filename": "26114429758a203d651f4df87c94de4c",
+   "bytes": 13020
+  },
+  {
+   "hash": "262009b8df6350761c7dfc8761f0af79",
+   "family": "interval-matching",
+   "result": "unsat",
+   "filename": "262009b8df6350761c7dfc8761f0af79",
+   "bytes": 76680
+  },
+  {
+   "hash": "2722f39c27dc45a989bb52761ed52e50",
+   "family": "cryptography-simon",
+   "result": "sat",
+   "filename": "2722f39c27dc45a989bb52761ed52e50",
+   "bytes": 28828
+  },
+  {
+   "hash": "29bab0de14e56e526be9683131005cb2",
+   "family": "argumentation",
+   "result": "sat",
+   "filename": "29bab0de14e56e526be9683131005cb2",
+   "bytes": 33872
+  },
+  {
+   "hash": "2a144840047376cee3b7b99455158976",
+   "family": "miter",
+   "result": "unsat",
+   "filename": "2a144840047376cee3b7b99455158976",
+   "bytes": 197372
+  },
+  {
+   "hash": "2a4680a801ad32ab8768030250daf0c8",
+   "family": "argumentation",
+   "result": "unknown",
+   "filename": "2a4680a801ad32ab8768030250daf0c8",
+   "bytes": 81676
+  },
+  {
+   "hash": "37d40a1092b58ad28285b9453872d211",
+   "family": "register-allocation",
+   "result": "unsat",
+   "filename": "37d40a1092b58ad28285b9453872d211",
+   "bytes": 3760
+  },
+  {
+   "hash": "385e2c7010a419a9bd47b9258c9d2903",
+   "family": "tseitin-formulas",
+   "result": "unsat",
+   "filename": "385e2c7010a419a9bd47b9258c9d2903",
+   "bytes": 2492
+  },
+  {
+   "hash": "38ca761a5808eace8bc8f1fcfdb5b5a8",
+   "family": "miter",
+   "result": "unsat",
+   "filename": "38ca761a5808eace8bc8f1fcfdb5b5a8",
+   "bytes": 37112
+  },
+  {
+   "hash": "3f341c57c37d86350af5233b8e15e52e",
+   "family": "cryptography-simon",
+   "result": "sat",
+   "filename": "3f341c57c37d86350af5233b8e15e52e",
+   "bytes": 18124
+  },
+  {
+   "hash": "3f4174289e971950c290f27892169bc5",
+   "family": "interval-matching",
+   "result": "unsat",
+   "filename": "3f4174289e971950c290f27892169bc5",
+   "bytes": 90264
+  },
+  {
+   "hash": "4029fbae284eaf924b37b6f43d3a67fb",
+   "family": "register-allocation",
+   "result": "unsat",
+   "filename": "4029fbae284eaf924b37b6f43d3a67fb",
+   "bytes": 14500
+  },
+  {
+   "hash": "428da12ab8f5f68ae261e6468c2fef73",
+   "family": "social-golfer",
+   "result": "unknown",
+   "filename": "428da12ab8f5f68ae261e6468c2fef73",
+   "bytes": 81288
+  },
+  {
+   "hash": "431bfb466be51ecd86b321b5cbce6d3c",
+   "family": "planning",
+   "result": "unsat",
+   "filename": "431bfb466be51ecd86b321b5cbce6d3c",
+   "bytes": 132332
+  },
+  {
+   "hash": "4611cd26b441b8c5866e4a2c5a7952dc",
+   "family": "argumentation",
+   "result": "unknown",
+   "filename": "4611cd26b441b8c5866e4a2c5a7952dc",
+   "bytes": 32964
+  },
+  {
+   "hash": "48ac8814180bdc90bf96a4caea64dae2",
+   "family": "interval-matching",
+   "result": "unsat",
+   "filename": "48ac8814180bdc90bf96a4caea64dae2",
+   "bytes": 107900
+  },
+  {
+   "hash": "4989239fbeb6eb40fc0b664d9ba92636",
+   "family": "cryptography-ascon",
+   "result": "unsat",
+   "filename": "4989239fbeb6eb40fc0b664d9ba92636",
+   "bytes": 495616
+  },
+  {
+   "hash": "4f38f4b005cc54122135c8c21aec4b85",
+   "family": "interval-matching",
+   "result": "unsat",
+   "filename": "4f38f4b005cc54122135c8c21aec4b85",
+   "bytes": 114824
+  },
+  {
+   "hash": "4fdcf4248a332c1c9a89d37439c879a9",
+   "family": "or_randxor",
+   "result": "unsat",
+   "filename": "4fdcf4248a332c1c9a89d37439c879a9",
+   "bytes": 18052
+  },
+  {
+   "hash": "54ab5a53d2fdfcda16ec74768b29f901",
+   "family": "relativized-pigeon-hole",
+   "result": "unsat",
+   "filename": "54ab5a53d2fdfcda16ec74768b29f901",
+   "bytes": 24400
+  },
+  {
+   "hash": "578b5e6a2f0b295168cb6c5420810a72",
+   "family": "pigeon-hole",
+   "result": "unsat",
+   "filename": "578b5e6a2f0b295168cb6c5420810a72",
+   "bytes": 28860
+  },
+  {
+   "hash": "578f9377bfbfcc6ea3a18eb630667956",
+   "family": "planning",
+   "result": "sat",
+   "filename": "578f9377bfbfcc6ea3a18eb630667956",
+   "bytes": 29588
+  },
+  {
+   "hash": "5b3d8a4465726adfcb58b9cdb1cc33f1",
+   "family": "interval-matching",
+   "result": "unsat",
+   "filename": "5b3d8a4465726adfcb58b9cdb1cc33f1",
+   "bytes": 113636
+  },
+  {
+   "hash": "70af2c3bfd44bcf9baa2a9605f4a17fe",
+   "family": "quasigroup-completion",
+   "result": "unsat",
+   "filename": "70af2c3bfd44bcf9baa2a9605f4a17fe",
+   "bytes": 98972
+  },
+  {
+   "hash": "71270454196ae092b28d0a74300a85e1",
+   "family": "coloring",
+   "result": "unsat",
+   "filename": "71270454196ae092b28d0a74300a85e1",
+   "bytes": 27536
+  },
+  {
+   "hash": "71dbf7ab78ef93c3d491c67752f03fd1",
+   "family": "miter",
+   "result": "unsat",
+   "filename": "71dbf7ab78ef93c3d491c67752f03fd1",
+   "bytes": 486992
+  },
+  {
+   "hash": "751402d0738e5622b599c651283cb48a",
+   "family": "set-covering",
+   "result": "sat",
+   "filename": "751402d0738e5622b599c651283cb48a",
+   "bytes": 164376
+  },
+  {
+   "hash": "751afd7ddf8f242ed7bd93517ba82149",
+   "family": "mutilated-chessboard",
+   "result": "unsat",
+   "filename": "751afd7ddf8f242ed7bd93517ba82149",
+   "bytes": 4548
+  },
+  {
+   "hash": "7aaf3275cbe217044ef305f0a1ca8eb5",
+   "family": "register-allocation",
+   "result": "unsat",
+   "filename": "7aaf3275cbe217044ef305f0a1ca8eb5",
+   "bytes": 7336
+  },
+  {
+   "hash": "7b4622a3ab523264378a560199de47ed",
+   "family": "argumentation",
+   "result": "unsat",
+   "filename": "7b4622a3ab523264378a560199de47ed",
+   "bytes": 98444
+  },
+  {
+   "hash": "7d58f2f0c79cbcad0496ced184ba0680",
+   "family": "social-golfer",
+   "result": "sat",
+   "filename": "7d58f2f0c79cbcad0496ced184ba0680",
+   "bytes": 31884
+  },
+  {
+   "hash": "7dc81d3cb9066f8bc06ceffbca237572",
+   "family": "social-golfer",
+   "result": "unknown",
+   "filename": "7dc81d3cb9066f8bc06ceffbca237572",
+   "bytes": 53676
+  },
+  {
+   "hash": "82fe0a5b2467d6e5299c315da8b16ec5",
+   "family": "brent-equations",
+   "result": "sat",
+   "filename": "82fe0a5b2467d6e5299c315da8b16ec5",
+   "bytes": 584240
+  },
+  {
+   "hash": "835ac60ca83af6f334b64b61c4ad345b",
+   "family": "tseitin-formulas",
+   "result": "unsat",
+   "filename": "835ac60ca83af6f334b64b61c4ad345b",
+   "bytes": 2024
+  },
+  {
+   "hash": "87ec32f70c5e3a279e636f7f62e70a19",
+   "family": "mutilated-chessboard",
+   "result": "unsat",
+   "filename": "87ec32f70c5e3a279e636f7f62e70a19",
+   "bytes": 6128
+  },
+  {
+   "hash": "8d458780fb74c28c01a5fe89990ad521",
+   "family": "mutilated-chessboard",
+   "result": "unsat",
+   "filename": "8d458780fb74c28c01a5fe89990ad521",
+   "bytes": 3504
+  },
+  {
+   "hash": "8db36208fc6ce43b4002cf048c549b3f",
+   "family": "argumentation",
+   "result": "unknown",
+   "filename": "8db36208fc6ce43b4002cf048c549b3f",
+   "bytes": 41256
+  },
+  {
+   "hash": "911cbc796d15eb316d36c82c90fd7d11",
+   "family": "fpga-routing",
+   "result": "sat",
+   "filename": "911cbc796d15eb316d36c82c90fd7d11",
+   "bytes": 209112
+  },
+  {
+   "hash": "91b88d172a08e2a57c189bddff51bfd5",
+   "family": "cryptography-simon",
+   "result": "sat",
+   "filename": "91b88d172a08e2a57c189bddff51bfd5",
+   "bytes": 21012
+  },
+  {
+   "hash": "92387c29e87aa857e84feb301f3d6aff",
+   "family": "rbsat",
+   "result": "sat",
+   "filename": "92387c29e87aa857e84feb301f3d6aff",
+   "bytes": 72416
+  },
+  {
+   "hash": "965ca988015c9aee5a1a7b2136c1fe5d",
+   "family": "register-allocation",
+   "result": "unsat",
+   "filename": "965ca988015c9aee5a1a7b2136c1fe5d",
+   "bytes": 5320
+  },
+  {
+   "hash": "9811b95bfd5888014d27e6dd384ff502",
+   "family": "argumentation",
+   "result": "unsat",
+   "filename": "9811b95bfd5888014d27e6dd384ff502",
+   "bytes": 30660
+  },
+  {
+   "hash": "99d134de6323a845a2828596a48bbb1d",
+   "family": "pigeon-hole",
+   "result": "unknown",
+   "filename": "99d134de6323a845a2828596a48bbb1d",
+   "bytes": 11732
+  },
+  {
+   "hash": "9c7043290cee8127c3626d8067759267",
+   "family": "argumentation",
+   "result": "unsat",
+   "filename": "9c7043290cee8127c3626d8067759267",
+   "bytes": 46792
+  },
+  {
+   "hash": "9fe43145e48a0ef0096bb72531f1a0e3",
+   "family": "cryptography-simon",
+   "result": "sat",
+   "filename": "9fe43145e48a0ef0096bb72531f1a0e3",
+   "bytes": 15680
+  },
+  {
+   "hash": "a09a2d7397732447bdcc9651973767b7",
+   "family": "social-golfer",
+   "result": "sat",
+   "filename": "a09a2d7397732447bdcc9651973767b7",
+   "bytes": 66892
+  },
+  {
+   "hash": "a1276d5dcb822aa03806df58fa9ca1c8",
+   "family": "grs-fp-comm",
+   "result": "unsat",
+   "filename": "a1276d5dcb822aa03806df58fa9ca1c8",
+   "bytes": 556428
+  },
+  {
+   "hash": "a45b60e53917968f922b97c6f8aa8db3",
+   "family": "coloring",
+   "result": "unsat",
+   "filename": "a45b60e53917968f922b97c6f8aa8db3",
+   "bytes": 18180
+  },
+  {
+   "hash": "a4941208671f6ebfd118e4e563538c31",
+   "family": "set-covering",
+   "result": "sat",
+   "filename": "a4941208671f6ebfd118e4e563538c31",
+   "bytes": 128908
+  },
+  {
+   "hash": "a98d77ba9d3fbe8b7c55cbf75b2b43a8",
+   "family": "social-golfer",
+   "result": "unknown",
+   "filename": "a98d77ba9d3fbe8b7c55cbf75b2b43a8",
+   "bytes": 31396
+  },
+  {
+   "hash": "aa0d6b8c63f57956b9aed350f38e0571",
+   "family": "interval-matching",
+   "result": "unsat",
+   "filename": "aa0d6b8c63f57956b9aed350f38e0571",
+   "bytes": 98632
+  },
+  {
+   "hash": "ae9522ea003ea9f75891b2d37a5e264b",
+   "family": "subgraph-isomorphism",
+   "result": "sat",
+   "filename": "ae9522ea003ea9f75891b2d37a5e264b",
+   "bytes": 149996
+  },
+  {
+   "hash": "ae9b7950ef1513068bb9339893ec8c50",
+   "family": "register-allocation",
+   "result": "unsat",
+   "filename": "ae9b7950ef1513068bb9339893ec8c50",
+   "bytes": 7844
+  },
+  {
+   "hash": "af1e84bc2ab44d87d1c4c0cbf9e601c5",
+   "family": "register-allocation",
+   "result": "unsat",
+   "filename": "af1e84bc2ab44d87d1c4c0cbf9e601c5",
+   "bytes": 5884
+  },
+  {
+   "hash": "b09585f2346c207e9e14a3daf0de46cf",
+   "family": "register-allocation",
+   "result": "unsat",
+   "filename": "b09585f2346c207e9e14a3daf0de46cf",
+   "bytes": 3300
+  },
+  {
+   "hash": "b157aeb75aec9158fed9e16d7fd2da57",
+   "family": "social-golfer",
+   "result": "sat",
+   "filename": "b157aeb75aec9158fed9e16d7fd2da57",
+   "bytes": 109816
+  },
+  {
+   "hash": "b86f2425cafeb1239d65bd529e372e02",
+   "family": "argumentation",
+   "result": "unknown",
+   "filename": "b86f2425cafeb1239d65bd529e372e02",
+   "bytes": 82136
+  },
+  {
+   "hash": "caead0e04b6de4365822b25dfd55967f",
+   "family": "cryptography",
+   "result": "sat",
+   "filename": "caead0e04b6de4365822b25dfd55967f",
+   "bytes": 385240
+  },
+  {
+   "hash": "cd58fa8eba4046fd0a86642e1fe26cb9",
+   "family": "interval-matching",
+   "result": "unsat",
+   "filename": "cd58fa8eba4046fd0a86642e1fe26cb9",
+   "bytes": 102252
+  },
+  {
+   "hash": "cfc53adcc8ed18ca161bb6f8bc02b237",
+   "family": "cryptography-ascon",
+   "result": "unsat",
+   "filename": "cfc53adcc8ed18ca161bb6f8bc02b237",
+   "bytes": 491680
+  },
+  {
+   "hash": "d17aa530bbd09452b0f32daf4ab9c8f0",
+   "family": "pigeon-hole",
+   "result": "unsat",
+   "filename": "d17aa530bbd09452b0f32daf4ab9c8f0",
+   "bytes": 2820
+  },
+  {
+   "hash": "d1a62a8688c6c4fabd0dec3770ce40dd",
+   "family": "quasigroup-completion",
+   "result": "sat",
+   "filename": "d1a62a8688c6c4fabd0dec3770ce40dd",
+   "bytes": 122268
+  },
+  {
+   "hash": "d7f381cd99ca40ba3324c8cc03a54269",
+   "family": "mutilated-chessboard",
+   "result": "unsat",
+   "filename": "d7f381cd99ca40ba3324c8cc03a54269",
+   "bytes": 3304
+  },
+  {
+   "hash": "d89f0a7a08f9b60579b26b01e2196394",
+   "family": "interval-matching",
+   "result": "unsat",
+   "filename": "d89f0a7a08f9b60579b26b01e2196394",
+   "bytes": 72232
+  },
+  {
+   "hash": "d8fa4265b93d0931ba6484e3cc0d7ab1",
+   "family": "brent-equations",
+   "result": "unsat",
+   "filename": "d8fa4265b93d0931ba6484e3cc0d7ab1",
+   "bytes": 149848
+  },
+  {
+   "hash": "deef4e5f8bf88393cea9589dff97d70c",
+   "family": "social-golfer",
+   "result": "sat",
+   "filename": "deef4e5f8bf88393cea9589dff97d70c",
+   "bytes": 297388
+  },
+  {
+   "hash": "e6d247292b525447a220323901842e4c",
+   "family": "or_randxor",
+   "result": "unsat",
+   "filename": "e6d247292b525447a220323901842e4c",
+   "bytes": 19064
+  },
+  {
+   "hash": "eecdcc36d35f06224cc972cbb08de804",
+   "family": "set-covering",
+   "result": "sat",
+   "filename": "eecdcc36d35f06224cc972cbb08de804",
+   "bytes": 121448
+  },
+  {
+   "hash": "f26f199564d6ffac7e700c2e66470ec0",
+   "family": "social-golfer",
+   "result": "sat",
+   "filename": "f26f199564d6ffac7e700c2e66470ec0",
+   "bytes": 43488
+  },
+  {
+   "hash": "f4064d73fd6e69caf154046e61fea7b8",
+   "family": "coloring-clique",
+   "result": "unsat",
+   "filename": "f4064d73fd6e69caf154046e61fea7b8",
+   "bytes": 8812
+  },
+  {
+   "hash": "f448874997bae64bd455fb00309dc738",
+   "family": "cryptography-ascon",
+   "result": "sat",
+   "filename": "f448874997bae64bd455fb00309dc738",
+   "bytes": 502000
+  },
+  {
+   "hash": "f88afbcd8b4c29a8c1b3518caa4e949c",
+   "family": "coloring-clique",
+   "result": "unsat",
+   "filename": "f88afbcd8b4c29a8c1b3518caa4e949c",
+   "bytes": 6956
+  },
+  {
+   "hash": "fb5d0254bc4b8d258eb84ea1dbcdda13",
+   "family": "mutilated-chessboard",
+   "result": "unsat",
+   "filename": "fb5d0254bc4b8d258eb84ea1dbcdda13",
+   "bytes": 5692
+  },
+  {
+   "hash": "fd1fbc1b090c14746a883b3a17259743",
+   "family": "hardware-verification",
+   "result": "unsat",
+   "filename": "fd1fbc1b090c14746a883b3a17259743",
+   "bytes": 1099856
+  },
+  {
+   "hash": "fdfcd52a21824b7181d66672f283ba04",
+   "family": "parity-games",
+   "result": "sat",
+   "filename": "fdfcd52a21824b7181d66672f283ba04",
+   "bytes": 190532
+  },
+  {
+   "hash": "fe19a31b76cbba5901e16ce36c7578ed",
+   "family": "product-configuration",
+   "result": "unsat",
+   "filename": "fe19a31b76cbba5901e16ce36c7578ed",
+   "bytes": 11844
+  },
+  {
+   "hash": "fee70cede2b5b55bfbdb6e48fbe7ce4f",
+   "family": "influence-maximization",
+   "result": "sat",
+   "filename": "fee70cede2b5b55bfbdb6e48fbe7ce4f",
+   "bytes": 375988
+  }
+ ]
+}

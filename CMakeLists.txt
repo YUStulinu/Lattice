@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.20)
+project(lattice CXX)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
+  set(CMAKE_BUILD_TYPE Release)
+endif()
+
+add_library(lattice_core STATIC solver/src/solver.cpp solver/src/elim.cpp)
+target_include_directories(lattice_core PUBLIC solver/src)
+
+function(lattice_flags target)
+  if(MSVC)
+    target_compile_definitions(${target} PRIVATE _CRT_SECURE_NO_WARNINGS)
+    target_compile_options(${target} PRIVATE /W4 /O2 /wd4244 /wd4267)
+  else()
+    target_compile_options(${target} PRIVATE -Wall -Wextra -O3)
+  endif()
+endfunction()
+lattice_flags(lattice_core)
+
+add_executable(lattice solver/src/main.cpp)
+target_link_libraries(lattice PRIVATE lattice_core)
+lattice_flags(lattice)
+
+enable_testing()
+add_executable(lattice_tests solver/tests/tests.cpp)
+target_link_libraries(lattice_tests PRIVATE lattice_core)
+lattice_flags(lattice_tests)
+add_test(NAME lattice_tests COMMAND lattice_tests)

@@ -1,0 +1,11 @@
+build/
+build-viz/
+checker/target/
+.venv/
+__pycache__/
+.pytest_cache/
+web/node_modules/
+web/dist/
+bench/data/*
+!bench/data/instances.json
+*.log

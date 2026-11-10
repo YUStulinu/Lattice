@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lattice — watching a SAT solver think</title>
+  </head>
+  <body>
+    <header>
+      <h1>Lattice</h1>
+      <p>A CDCL SAT solver at work, replayed step by step from its own trace: decisions, unit propagation, conflicts, learnt clauses and backjumps.</p>
+    </header>
+    <main>
+      <section class="left">
+        <div class="toolbar">
+          <select id="trace" aria-label="Problem"></select>
+          <button id="play" type="button">Play</button>
+          <button id="step" type="button" title="One event">Step</button>
+          <button id="next-conflict" type="button">Next conflict</button>
+          <label class="speed">Speed <input id="speed" type="range" min="0" max="5" step="1" value="2" /></label>
+        </div>
+        <input id="scrub" type="range" min="0" value="0" aria-label="Position in the trace" />
+        <div id="board"></div>
+        <p id="caption" class="caption"></p>
+      </section>
+      <aside>
+        <dl id="counters"></dl>
+        <h2>Decision level over time</h2>
+        <canvas id="chart" width="560" height="110"></canvas>
+        <h2>Decision stack</h2>
+        <ol id="stack"></ol>
+        <h2>Last conflict</h2>
+        <p id="conflict" class="clause"></p>
+        <h2>Learnt clauses <span id="learnt-count"></span></h2>
+        <ol id="learnts" reversed></ol>
+      </aside>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

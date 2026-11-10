@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  solver:
+    # The C++ solver and its tests (random formulas against brute force, pigeonhole, edge cases).
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+      - run: cmake --build build --config Release --parallel
+      - run: ctest --test-dir build -C Release --output-on-failure
+
+  checker-and-proofs:
+    # The Rust DRAT checker; then the solver's proofs of small unsatisfiable formulas are checked
+    # end to end, and a proof checked against a satisfiable formula must be rejected.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cargo test --release
+        working-directory: checker
+      - run: cargo build --release
+        working-directory: checker
+      - run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build --parallel
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install numpy==2.5.4 matplotlib==3.11.2 pytest==9.2.0
+      - name: Python tests
+        working-directory: bench
+        run: python -m pytest -q tests
+      - name: Proofs end to end
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import itertools
+          def php(n, path, drop=False):
+              p = lambda i, j: i * n + j + 1
+              cl = [[p(i, j) for j in range(n)] for i in range(n + 1)]
+              cl += [[-p(a, j), -p(b, j)] for j in range(n) for a, b in itertools.combinations(range(n + 1), 2)]
+              if drop: cl = cl[:-1]
+              open(path, "w").write(f"p cnf {(n + 1) * n} {len(cl)}\n" + "".join(" ".join(map(str, c)) + " 0\n" for c in cl))
+          php(7, "php7.cnf"); php(7, "php7_sat.cnf", drop=True)
+          PY
+          ./build/lattice --quiet --proof php7.drat php7.cnf | grep "s UNSATISFIABLE"
+          ./checker/target/release/lattice-check php7.cnf php7.drat | grep "s VERIFIED"
+          ./build/lattice --quiet --text-proof --proof php7.txt php7.cnf > /dev/null
+          ./checker/target/release/lattice-check php7.cnf php7.txt | grep "s VERIFIED"
+          ! ./checker/target/release/lattice-check php7_sat.cnf php7.drat
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
