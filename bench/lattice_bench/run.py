@@ -34,7 +34,9 @@ def exe(*candidates: str) -> str:
         p = ROOT / c
         if p.exists():
             return str(p)
-    raise FileNotFoundError(f"build first: none of {candidates}")
+    # Not built yet: return the expected path, so importing this module never fails; running a
+    # solver then fails with a clear "file not found" for that path.
+    return str(ROOT / candidates[-1])
 
 
 LATTICE = exe("build/Release/lattice.exe", "build/lattice")
